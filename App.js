@@ -5,14 +5,12 @@ import { createBottomTabNavigator } from "react-navigation-tabs";
 import ScanScreen from './screens/ScanScreen';
 
 export default class App extends React.Component {
-  render() {
-    return <AppContainer />;
+  render(){
+    return (
+      
+        <ScanScreen />
+      
+    );
   }
 }
-
-const TabNavigator = createBottomTabNavigator({
-  ScanScreen: { screen: ScanScreen },
-});
-
-const AppContainer = createAppContainer(TabNavigator);
 
